@@ -1,6 +1,6 @@
 # Coding task during second semester
 
-Throughout the first half of the semester, we worked on few assignments (as groups).
+Throughout the first half of the semester, we worked on few assignments (in groups).
 In one of the tasks we had to extend two classes so that they saved their attributes in XML or JSON representation. The input file is a .csv file.
 
 
