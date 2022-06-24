@@ -11,4 +11,7 @@ We had to implement the function `def_get_xml_repr(self) -> etree.Element:` whic
 Here, the attributes of the Joke class should be saved using a JSON representation. Here, we had to implement the function `_get_json_repr(self) -> Dict:` of the Joke
 class, which returns a dictionary containing all attributes.
 
+
+
+You will find the .csv file in this repository too, in case you wonder what it looked like.
 This repository and the code serve as a little insight into my semester.
