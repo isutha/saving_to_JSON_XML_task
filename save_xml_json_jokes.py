@@ -23,7 +23,7 @@ class Joke:
         self.filtered_joke = self.filter_profanity()[0]
         self.num_profanities = self.filter_profanity()[1]
 
-        # TODO: Save representations in xml and json
+        #Save representations in xml and json
         self.xml_print = self._get_xml_repr()
         self.json_print = self._get_json_repr()
 
@@ -120,10 +120,11 @@ class Joke:
             output += " ".join(sentence) + " "
         return output
 
-    # TODO: Implement the method
+    # Implement the method
     def _get_xml_repr(self) -> etree.Element:
         """Get the xml representation of the Joke with all its attributes as nodes"""
-        # Create the attributes
+
+        # Create the attributes and subtree elements
         joke_xml = etree.Element('joke')
         text = etree.SubElement(joke_xml, "text")
         author = etree.SubElement(joke_xml, "author")
@@ -143,7 +144,7 @@ class Joke:
 
     def _get_json_repr(self) -> Dict:
 
-        # Create a dictionary that contains all the attributes as key:value pair
+        # Create a normal dictionary that contains all the attributes as key:value pair
         all_data = {
             "author": self.author,
             "link": self.link,
@@ -267,7 +268,7 @@ class JokeGenerator:
 
 
 if __name__ == "__main__":
-    # You can use the following commands for testing your implementation
+    # You can use the following commands to test your implementation
     gen = JokeGenerator("reddit_dadjokes.csv")
     gen.save_jokes_xml('reddit_dadjokes.xml')
     # gen = JokeGenerator('example.json')
